@@ -32,7 +32,7 @@ var startpage = function(){
 var weatherAPI = function(){
   var APIKey = "2b7269eb9a0688007c36082e9ac678c8";
   var cityID =4138106;
-  var queryURL = "http://api.openweathermap.org/data/2.5/weather?id="+cityID+"&units=imperial&APPID="+APIKey;
+  var queryURL = "https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?id="+cityID+"&units=imperial&APPID="+APIKey;
 
   $.ajax({
     url: queryURL,
