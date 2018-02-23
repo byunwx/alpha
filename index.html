@@ -2,9 +2,140 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Byunwx: web development</title>
   </head>
   <body>
+<header class="col s12, l12">Byunwx: Web Development</header>
+    <main>
 
+
+      <div class="col s12, l12" id="body">
+
+        <div class="vl" id="title">
+          <h3 class="typed" id="jobTitle">Web developer . . . </h3>
+          <h1 class="typed" id="name">Woojoo byun</h1>
+        </div>
+
+      </div>
+
+        <div class="carousel carousel-slider center col s12 l12" data-indicators="true" id="carouselIndex">
+          <!-- <div class="carousel-fixed-item center">
+            <a class="btn waves-effect white grey-text darken-text-2">button</a>
+          </div> -->
+          <div class="carousel-item red white-text" href="#one!" id="weatherCarousel">
+            <div class="row">
+              <div class="col s10 l2 offset-s1 offset-l1 inside">
+                <h2>Today</h2>
+                <p class="white-text">In My City</p>
+                <div id="weatherInfo"></div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item amber white-text" href="#two!" id="aboutMeCarousel">
+            <div class="inside">
+              <h2>About Me</h2>
+              <p class="white-text"></p>
+            </div>
+            <div class="row">
+              <div class="col s6 l6">
+                <img src="https://avatars2.githubusercontent.com/u/33700639?s=400&u=1397ff951c46d68743735ece5a9ef779447138c9&v=4" alt="Woojoo's Portrait">
+              </div>
+              <div class="col s6 l6 aboutme">
+                <h3><b>Skills</b></h3>
+                <p>Computer Science applied to JavaScript</p>
+                <p>Browser Based Technologies (HTML, CSS, JavaScript, JQuery)</p>
+                <p>Deployment</p>
+                <p>Frame work (bootstrap, materialized)</p>
+                <p>Experienced in group work with Trello</p>
+                <p>API calls, Firebase</p>
+                <p>Java</p>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item green white-text" href="#three!">
+            <h2>Portfolio</h2>
+            <p class="white-text"></p>
+            <a class="btn waves-effect red gray-text darken-text-2"><p>click the bottom links below</p></a>
+            <a href="https://github.com/byunwx" target="_blank"><p>byunwx: git hub page</p></a>
+            <a href="https://byunwx.github.io/swrpg" target="_blank"><p>Star Wars: RPG</p></a>
+            <a href="https://byunwx.github.io/NYTsearch" target="_blank"><p>New York Times Search</p></a>
+            <a href="https://byunwx.github.io/packman" target="_blank"><p>Pack-man</p></a>
+          </div>
+
+
+
+          <div class="carousel-item blue white-text" href="#four!" id="contactCarousel">
+            <h2>Contact</h2>
+            <p class="white-text"></p>
+            <div class="row">
+              <div class="col s0 l7 offset-l1 left noCellphone">
+                <img src="http://www.diymailboxes.com/wp-content/uploads/2016/01/small-red-mailbox-art-5239b1f7c4135551-e1453319550210.jpg" height="380px" width="750px" alt="mail box picture">
+              </div>
+              <div class="col s10 l4 offset-s1 inside">
+                <form method="POST" action="https://formspree.io/byunwx@gmail.com">
+                  <p>NAME</p>
+                  <input id="name" type="name" name="name" placeholder="John Smith">
+                  <br />
+                  <p>EMAIL</p>
+                  <input id="email" type="email" name="email" placeholder="example@gmail.com">
+                  <br />
+                  <p>EMAIL</p>
+                  <textarea id="textarea" name="message" placeholder="Your message"></textarea>
+                  <br />
+                  <button type="submit" class="btn waves-effect green gray-text darken-text-2">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </main>
+    <footer class="page-footer">
+      <div class="row" id="footRow">
+
+        <div id=footerMain>
+        <div class="vl col s6 l9" id="footer-title">
+          <h3>Web developer</h3>
+          <h1>Woojoo byun</h1>
+        </div>
+        <div class="col s6 m3">
+          <div class="iconlink">
+            <a href="https://github.com/byunwx"><div class="smallbox box1"></div></a>
+            <a  href="https://www.linkedin.com/in/woojoo-byun-877181153/"><div class="smallbox box2"></div></a>
+            <a href="https://stackoverflow.com/users/9036970/woojoo-byun"><div class="smallbox box3"></div></a>
+          </div>
+        </div>
+        <div>
+          <div class="fixed-action-btn  horizontal click-to-toggle" id="floatingNav">
+            <a class="btn-floating btn-large red">
+              <i class="large material-icons" id="more_vert">more_horiz</i>
+            </a>
+            <ul id="floatingNavBtn">
+              <li><a id="P-btn" class="btn btn-left red"><p>Portfolio</p></a></li>
+              <li><a id="A-btn" class="btn btn-left yellow darken-1"><p>About Me</p></a></li>
+              <li><a id="C-btn" class="btn btn-left blue"><p>Contact</p></a></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://raw.githubusercontent.com/julianshapiro/velocity/master/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./js/logic.js"></script>
   </body>
 </html>

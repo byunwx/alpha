@@ -1,0 +1,208 @@
+
+.smallbox{
+  width: 50px;
+  height: 50px;
+  float: right;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.box1{
+  background-image: url("../images/icons/githubicon.png");
+
+}
+.box2{
+  background-image: url("../images/icons/link-icon.png");
+
+}
+.box3{
+  background-image: url("../images/icons/stack.png");
+
+}
+.box1:hover{
+  background-image: url("../images/icons/github.png");
+}
+.box2:hover{
+  background-image: url("../images/icons/linkicon.png");
+}
+.box3:hover{
+  background-image: url("../images/icons/stackicon.png");
+}
+
+footer{
+  background-color: white!important;
+  display: none;
+}
+body{
+  font-family: 'Permanent Marker', cursive;
+  background-color: white;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: black;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+header{
+  text-align: center;
+}
+
+main {
+  flex: 1 0 auto;
+  min-height: 100%;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  border: solid white;
+  margin: auto;
+  padding: 0;
+}
+
+.boxText{
+  color: black;
+  background-color: lightblue;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.vl #title{
+  padding: 0;
+}
+.vl {
+    border-left: 10px solid #ffc107;
+    margin-left: 10px;
+    top: 0;
+}
+.vl h3{
+  margin-left: 10px;
+  color: #2196F3
+}
+.vl h1{
+  margin-left: 10px;
+  color:black!important;
+}
+
+button{
+  padding-right: 100px;;
+}
+.btn{
+  height: auto!important;
+}
+/* carousel */
+.carousel-item{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#weatherCarousel .inside{
+  text-align: left;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: times;
+}
+#title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.carousel {
+min-height: 550px;
+}
+/* about */
+/* #aboutMeCarousel img{
+  height: 300px;
+  width: 150px;
+  top: 50%;
+  left: 25%;
+  transform: translateX(-50%) translateY(-50%);
+} */
+a{
+  color: white;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+#contactCarousel input{
+  background-color: #2196f3;
+}
+#aboutMeCarousel .aboutme{
+  text-align: left;
+}
+@media screen and (max-width: 700px) {
+  h1, h3{
+    font-size: 15px;
+  }
+  .iconlink{
+    margin-left: auto;
+    right: 0;
+  }
+  .carousel {
+  min-height: 480px;
+
+  }
+  #aboutMeCarousel .aboutme{
+    font-family: times;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  main{
+    min-height: 450px!important;
+      flex: 1;
+  }
+  .smallbox{
+    margin-top: 0px;
+    float: left;
+  }
+  footer{
+    background-color: black!important;
+    display: none;
+    flex: none;
+    height: 150px;
+  }
+  body{
+    font-family: 'Permanent Marker', cursive;
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .vl {
+      border-left: 6px solid white;
+  }
+  .vl h3, .vl h1{
+    margin-left: 10px;
+    color:white!important;
+  }
+  .box1{
+    background-image: url("../images/icons/github.png");
+  }
+  .box2{
+    background-image: url("../images/icons/linkicon.png");
+  }
+  .box3{
+    background-image: url("../images/icons/stackicon.png");
+  }
+  .box1:hover{
+    background-image: url("../images/icons/githubicon.png");
+  }
+  .box2:hover{
+    background-image: url("../images/icons/link-icon.png");
+  }
+  .box3:hover{
+    background-image: url("../images/icons/stack.png");
+  }
+  header{
+    text-align: center;
+  }
+  .noCellphone{
+    display: none;
+  }
+}
